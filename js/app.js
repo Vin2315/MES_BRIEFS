@@ -7,6 +7,7 @@ function temp(){
             type: "GET",
             success: function (result){
                 document.querySelector("p").innerHTML= `à ${ville} il fait <br> ${result.main.temp}°`
+                document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + ville + "')";
                 if (graf){
                     graf.destroy();
                 }
